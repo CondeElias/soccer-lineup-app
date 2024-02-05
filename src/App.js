@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 import SoccerLineUp from "react-soccer-lineup";
 import { nanoid } from "nanoid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFutbol } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   const [state] = useState({
@@ -118,6 +120,7 @@ export default function App() {
           }}
         >
           <h1 style={{ color: `#ffffff`, backgroundColor: `#4d4d4d`, padding: "10px", borderRadius: "5px"}}>
+          <FontAwesomeIcon icon={faFutbol} style={{ marginRight: "10px" }} />
             Pelada Criticos FC
           </h1>
           <form
